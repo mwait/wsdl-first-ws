@@ -11,7 +11,7 @@
 		http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd">
 
 <jaxws:endpoint id="customerOrdersWs" address="/customerOrders"
-wsdlLocation="WEB-INF/wsdl/CustomerOrders.wsdl" serviceName="customerOrders:CustomerOrderService" 
+wsdlLocation="WEB-INF/wsdl/CustomerOrders.wsdl" serviceName="customerOrders:CustomerOrdersService" 
 implementor="com.wait.impl.CustomersOrdersWSImpl"
 xmlns:customerOrders="http://wait.com/">
 </jaxws:endpoint>
