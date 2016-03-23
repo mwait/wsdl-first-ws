@@ -1,4 +1,4 @@
-package com.wait;
+package com.wait.impl;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -6,7 +6,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.jetty.server.Request;
+
+import com.wait.CreateOrdersRequest;
+import com.wait.CreateOrdersResponse;
+import com.wait.CustomerOrdersPortType;
+import com.wait.GetOrdersRequest;
+import com.wait.GetOrdersResponse;
+import com.wait.Order;
+import com.wait.Product;
 
 public class CustomersOrdersWSImpl implements CustomerOrdersPortType {
 
