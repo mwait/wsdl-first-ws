@@ -1,3 +1,4 @@
 WSDL URL 
 http://localhost:8080/wsdl-first-ws/services/customerOrders?wsdl
 http://localhost:8080/wsdl-first-ws/services
+soapui
