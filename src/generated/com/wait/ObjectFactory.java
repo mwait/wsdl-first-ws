@@ -26,8 +26,10 @@ public class ObjectFactory {
 
     private final static QName _CreateOrdersResponse_QNAME = new QName("http://wait.com/", "createOrdersResponse");
     private final static QName _GetOrdersRequest_QNAME = new QName("http://wait.com/", "getOrdersRequest");
+    private final static QName _DeleteOrdersResponse_QNAME = new QName("http://wait.com/", "deleteOrdersResponse");
     private final static QName _GetOrdersResponse_QNAME = new QName("http://wait.com/", "getOrdersResponse");
     private final static QName _CreateOrdersRequest_QNAME = new QName("http://wait.com/", "createOrdersRequest");
+    private final static QName _DeleteOrdersRequest_QNAME = new QName("http://wait.com/", "deleteOrdersRequest");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.wait
@@ -61,11 +63,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link DeleteOrdersResponse }
+     * 
+     */
+    public DeleteOrdersResponse createDeleteOrdersResponse() {
+        return new DeleteOrdersResponse();
+    }
+
+    /**
      * Create an instance of {@link CreateOrdersRequest }
      * 
      */
     public CreateOrdersRequest createCreateOrdersRequest() {
         return new CreateOrdersRequest();
+    }
+
+    /**
+     * Create an instance of {@link DeleteOrdersRequest }
+     * 
+     */
+    public DeleteOrdersRequest createDeleteOrdersRequest() {
+        return new DeleteOrdersRequest();
     }
 
     /**
@@ -103,6 +121,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteOrdersResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://wait.com/", name = "deleteOrdersResponse")
+    public JAXBElement<DeleteOrdersResponse> createDeleteOrdersResponse(DeleteOrdersResponse value) {
+        return new JAXBElement<DeleteOrdersResponse>(_DeleteOrdersResponse_QNAME, DeleteOrdersResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetOrdersResponse }{@code >}}
      * 
      */
@@ -118,6 +145,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://wait.com/", name = "createOrdersRequest")
     public JAXBElement<CreateOrdersRequest> createCreateOrdersRequest(CreateOrdersRequest value) {
         return new JAXBElement<CreateOrdersRequest>(_CreateOrdersRequest_QNAME, CreateOrdersRequest.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteOrdersRequest }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://wait.com/", name = "deleteOrdersRequest")
+    public JAXBElement<DeleteOrdersRequest> createDeleteOrdersRequest(DeleteOrdersRequest value) {
+        return new JAXBElement<DeleteOrdersRequest>(_DeleteOrdersRequest_QNAME, DeleteOrdersRequest.class, null, value);
     }
 
 }
